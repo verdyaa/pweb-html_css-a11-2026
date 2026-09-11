@@ -20,7 +20,6 @@
   --font-kulim: 'Kulim Park', sans-serif;
 }
 
-<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
@@ -207,50 +206,32 @@ a:hover {
 
 .vertical-ribbon-dark:hover {
   background-color: #3f342d;
-=======
-.beige-timeline-body {
-  padding: 24px 28px 40px 28px;
 }
 
-.timeline-track {
-  list-style: none;
-  position: relative;
-  border-left: 1px solid var(--border);
-  margin-left: 6px;
+.panel-left-scroll {
+  width: 489px;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: var(--bg-panel);
 }
 
-.timeline-item {
-  position: relative;
-  padding-left: 20px;
-  margin-bottom: 24px;
-}
-
-.timeline-item:last-child {
-  margin-bottom: 0;
-}
-
-.timeline-box {
-  width: 7px;
-  height: 7px;
-  background-color: var(--mustard);
-  position: absolute;
-  left: -4px;
-  top: 6px;
-  border-radius: 1px;
-}
-
-.timeline-text strong {
-  display: block;
+.panel-left-header {
+  padding: 12px 28px;
   font-family: var(--font-koulen);
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  color: var(--cream);
-  line-height: 1.2;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  background-color: var(--bg-darker);
+  border-bottom: 1px solid var(--border);
+  color: var(--cream-dim);
 }
 
-.timeline-text span {
-  font-family: var(--font-kulim);
-  font-size: 13px;
-  color: var(--cream-dim);
->>>>>>> main
+.panel-right-scroll {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--bg-dark);
 }
