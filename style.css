@@ -60,3 +60,101 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--mustard);
 }
+
+.top-bar {
+  height: 42px;
+  width: 100%;
+  background-color: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-shrink: 0;
+  z-index: 20;
+}
+
+.top-bar-left {
+  width: 531px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.top-bar-cap {
+  width: 42px;
+  height: 100%;
+  background-color: var(--cream-bg);
+  border-right: 1px solid var(--border);
+  flex-shrink: 0;
+  display: block;
+}
+
+.badge-status {
+  font-family: var(--font-koulen);
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--cream);
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.badge-location {
+  font-family: var(--font-koulen);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--cream-dim);
+  margin-left: auto;
+  padding-right: 18px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.top-bar-title {
+  font-family: var(--font-koulen);
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--cream);
+}
+
+.top-bar-actions {
+  display: flex;
+  height: 100%;
+}
+
+.nav-square-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 100%;
+  border-left: 1px solid var(--border);
+  font-family: var(--font-kulim);
+  font-size: 15px;
+  color: var(--cream);
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-square-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--mustard);
+}
+
+.nav-square-btn img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
