@@ -158,3 +158,48 @@ a:hover {
   height: 16px;
   display: block;
 }
+
+.viewport-container {
+  display: flex;
+  height: calc(100vh - 42px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.vertical-ribbon {
+  width: 42px;
+  background-color: var(--cream-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.vertical-ribbon-dark {
+  height: 145px;
+  background-color: var(--bg-panel);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.vertical-ribbon-dark span {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-family: var(--font-koulen);
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+.vertical-ribbon-cream {
+  flex-grow: 1;
+  background-color: var(--cream-bg);
+}
