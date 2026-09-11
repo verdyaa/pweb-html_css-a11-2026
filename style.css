@@ -265,3 +265,44 @@ a:hover {
 .accent-mustard {
   color: var(--mustard);
 }
+
+.hero-block-landing {
+  padding: 48px 36px 40px 36px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-panel);
+}
+
+.hero-block-landing h2 {
+  font-family: var(--font-koulen);
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--mustard);
+  margin-bottom: 14px;
+}
+
+.bio-text {
+  font-family: var(--font-kulim);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--cream);
+  max-width: 680px;
+  margin-bottom: 24px;
+}
+
+.btn-pill-cv {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-koulen);
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: var(--mustard);
+  color: var(--cream-dark);
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-pill-cv:hover {
+  background-color: var(--cream);
+  transform: translateY(-1px);
+}
