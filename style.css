@@ -20,6 +20,7 @@
   --font-kulim: 'Kulim Park', sans-serif;
 }
 
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
@@ -206,4 +207,50 @@ a:hover {
 
 .vertical-ribbon-dark:hover {
   background-color: #3f342d;
+=======
+.beige-timeline-body {
+  padding: 24px 28px 40px 28px;
+}
+
+.timeline-track {
+  list-style: none;
+  position: relative;
+  border-left: 1px solid var(--border);
+  margin-left: 6px;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-box {
+  width: 7px;
+  height: 7px;
+  background-color: var(--mustard);
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  border-radius: 1px;
+}
+
+.timeline-text strong {
+  display: block;
+  font-family: var(--font-koulen);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: var(--cream);
+  line-height: 1.2;
+}
+
+.timeline-text span {
+  font-family: var(--font-kulim);
+  font-size: 13px;
+  color: var(--cream-dim);
+>>>>>>> main
 }
