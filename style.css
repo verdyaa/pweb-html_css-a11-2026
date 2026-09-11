@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kulim+Park:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --bg-dark: #2c2622;
+  --bg-panel: #382e28;
+  --bg-darker: #201a16;
+  --bg-card: #322a24;
+  --border: #4a3e37;
+  --border-light: #5a4c43;
+
+  --cream: #faefe0;
+  --cream-bg: #faefdd;
+  --cream-dim: #c5b8a8;
+  --cream-dark: #221c18;
+
+  --mustard: #d4a359;
+  --mustard-dark: #b5863e;
+
+  --font-koulen: 'Koulen', cursive, sans-serif;
+  --font-kulim: 'Kulim Park', sans-serif;
+}
