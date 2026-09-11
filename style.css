@@ -203,3 +203,7 @@ a:hover {
   flex-grow: 1;
   background-color: var(--cream-bg);
 }
+
+.vertical-ribbon-dark:hover {
+  background-color: #3f342d;
+}
