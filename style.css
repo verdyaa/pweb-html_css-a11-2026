@@ -235,3 +235,33 @@ a:hover {
   overflow-y: auto;
   background-color: var(--bg-dark);
 }
+
+.panel-left-profile {
+  padding: 24px 28px 20px 28px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-panel);
+  flex-shrink: 0;
+}
+
+.intro-lead-left {
+  font-family: var(--font-kulim);
+  font-size: 13px;
+  color: var(--cream-dim);
+  margin-bottom: 4px;
+}
+
+.name-display-left {
+  font-family: var(--font-koulen);
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.8px;
+  color: var(--cream);
+}
+
+.accent-mustard {
+  color: var(--mustard);
+}
