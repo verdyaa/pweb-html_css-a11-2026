@@ -449,6 +449,7 @@ a:hover {
   color: var(--mustard);
 }
 
+<<<<<<< HEAD
 .cv-photo-container {
   width: 100%;
   padding: 24px 28px 20px 28px;
@@ -461,4 +462,37 @@ a:hover {
   border-radius: 8px;
   border: 1px solid var(--border);
   display: block;
+=======
+.cv-navigation-beige {
+  padding: 20px 28px;
+  background-color: var(--cream-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.cv-anchor-list {
+  list-style: none;
+}
+
+.cv-anchor-list li {
+  margin-bottom: 10px;
+}
+
+.cv-anchor-list li:last-child {
+  margin-bottom: 0;
+}
+
+.cv-anchor-list a {
+  font-family: var(--font-koulen);
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--cream-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.15s ease;
+}
+
+.cv-anchor-list a:hover {
+  color: var(--mustard-dark);
+>>>>>>> main
 }
