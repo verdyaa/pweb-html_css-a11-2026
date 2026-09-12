@@ -449,7 +449,6 @@ a:hover {
   color: var(--mustard);
 }
 
-<<<<<<< HEAD
 .cv-photo-container {
   width: 100%;
   padding: 24px 28px 20px 28px;
@@ -462,37 +461,37 @@ a:hover {
   border-radius: 8px;
   border: 1px solid var(--border);
   display: block;
-=======
-.cv-navigation-beige {
-  padding: 20px 28px;
-  background-color: var(--cream-bg);
+}
+
+.cv-editorial-hero {
+  padding: 44px 36px 36px 36px;
   border-bottom: 1px solid var(--border);
+  background-color: var(--bg-panel);
 }
 
-.cv-anchor-list {
-  list-style: none;
-}
-
-.cv-anchor-list li {
-  margin-bottom: 10px;
-}
-
-.cv-anchor-list li:last-child {
-  margin-bottom: 0;
-}
-
-.cv-anchor-list a {
+.editorial-h1 {
   font-family: var(--font-koulen);
-  font-size: 14px;
+  font-size: 32px;
+  line-height: 1.25;
   letter-spacing: 1px;
-  color: var(--cream-dark);
+  color: var(--cream);
+  max-width: 820px;
+  margin-bottom: 24px;
+}
+
+.cv-sublinks-row {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 20px;
+}
+
+.cv-sublinks-row a {
+  font-family: var(--font-koulen);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--mustard);
   transition: color 0.15s ease;
 }
 
-.cv-anchor-list a:hover {
-  color: var(--mustard-dark);
->>>>>>> main
+.cv-sublinks-row a:hover {
+  color: var(--cream);
 }
