@@ -306,3 +306,80 @@ a:hover {
   background-color: var(--cream);
   transform: translateY(-1px);
 }
+
+.projects-strip {
+  padding: 32px 0 36px 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.carousel-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 36px;
+  margin-bottom: 20px;
+}
+
+.carousel-header-title {
+  font-family: var(--font-koulen);
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--cream);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-right: 36px;
+  padding-bottom: 12px;
+}
+
+.project-card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--mustard);
+}
+
+.project-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-color: var(--bg-darker);
+}
+
+.project-card-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card-tag {
+  font-family: var(--font-koulen);
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--mustard);
+  margin-bottom: 6px;
+}
+
+.project-card-title {
+  font-family: var(--font-koulen);
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: var(--cream);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
