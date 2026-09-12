@@ -383,3 +383,40 @@ a:hover {
   line-height: 1.25;
   margin-bottom: 8px;
 }
+
+.domains-block {
+  padding: 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.domains-title {
+  font-family: var(--font-koulen);
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+
+.domains-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.domain-pill {
+  font-family: var(--font-kulim);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--cream);
+  transition: all 0.2s ease;
+}
+
+.domain-pill:hover {
+  border-color: var(--mustard);
+  color: var(--mustard);
+  transform: translateY(-2px);
+}
