@@ -448,3 +448,17 @@ a:hover {
 .social-link-btn:hover {
   color: var(--mustard);
 }
+
+.cv-photo-container {
+  width: 100%;
+  padding: 24px 28px 20px 28px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-panel);
+}
+
+.cv-photo-container img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  display: block;
+}
