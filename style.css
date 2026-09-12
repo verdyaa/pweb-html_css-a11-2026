@@ -383,3 +383,68 @@ a:hover {
   line-height: 1.25;
   margin-bottom: 8px;
 }
+
+.domains-block {
+  padding: 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.domains-title {
+  font-family: var(--font-koulen);
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+
+.domains-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.domain-pill {
+  font-family: var(--font-kulim);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 16px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--cream);
+  transition: all 0.2s ease;
+}
+
+.domain-pill:hover {
+  border-color: var(--mustard);
+  color: var(--mustard);
+  transform: translateY(-2px);
+}
+
+.footer-split {
+  padding: 28px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-panel);
+  border-top: 1px solid var(--border);
+}
+
+.footer-meta-block {
+  font-family: var(--font-kulim);
+  font-size: 12px;
+  color: var(--cream-dim);
+}
+
+.social-link-btn {
+  font-family: var(--font-koulen);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--cream);
+  margin-left: 18px;
+  transition: color 0.15s ease;
+}
+
+.social-link-btn:hover {
+  color: var(--mustard);
+}
