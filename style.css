@@ -62,13 +62,15 @@ a:hover {
 }
 
 .top-bar {
+  position: sticky;
+  top: 0;
   height: 42px;
   width: 100%;
   background-color: var(--bg-panel);
   border-bottom: 1px solid var(--border);
   display: flex;
   flex-shrink: 0;
-  z-index: 20;
+  z-index: 100;
 }
 
 .top-bar-left {
@@ -398,6 +400,19 @@ a:hover {
   transform: translateY(-1px);
 }
 
+.btn-pill-cv:active {
+  transform: translateY(1px);
+}
+
+.btn-pill-cv:focus-visible {
+  outline: 2px solid var(--mustard);
+  outline-offset: 2px;
+}
+
+.mobile-intro-header {
+  display: none;
+}
+
 .projects-strip {
   padding: 24px 32px;
   border-bottom: 1px solid var(--border);
@@ -709,17 +724,31 @@ a:hover {
     display: none;
   }
 
-  .panel-left-scroll {
-    width: 100%;
-    height: auto;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-
   .panel-right-scroll {
+    order: 1;
     width: 100%;
     height: auto;
     overflow: visible;
+  }
+
+  .panel-left-scroll {
+    order: 2;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    border-bottom: none;
+  }
+
+  .mobile-intro-header {
+    display: block;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 14px;
+  }
+
+  .panel-left-profile {
+    display: none;
   }
 
   .research-card-item {
@@ -750,6 +779,40 @@ a:hover {
   .footer-split {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-block-landing {
+    padding: 20px 16px;
+  }
+
+  .projects-strip {
+    padding: 20px 16px;
+  }
+
+  .domains-block {
+    padding: 20px 16px;
+  }
+
+  .project-detail-hero {
+    padding: 20px 16px;
+  }
+
+  .project-detail-hero .name-display {
+    font-size: 24px;
+  }
+
+  .project-detail-body {
+    padding: 20px 16px 32px 16px;
+  }
+
+  .card-project-carousel {
+    width: 280px;
+  }
+
+  .main-footer {
+    padding: 20px 16px;
   }
 }
 
