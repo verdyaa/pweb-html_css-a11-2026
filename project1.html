@@ -234,56 +234,54 @@
     <main class="panel-right-scroll">
 
       <section class="project-detail-hero">
-        <p class="intro-lead-left">Hello, my name is</p>
-        <div class="name-display-left" style="font-size: 22px; margin-bottom: 6px;">
+        <p class="intro-lead-left">Full-Stack Web Engineering // Energy Decision Platform</p>
+        <div class="name-display-left" style="font-size: 20px; margin-bottom: 6px;">
           MUHAMMAD RIFQI <span class="accent-mustard">FATHURRAHMAN</span>
         </div>
-        <h1 class="name-display">PROJECT TITLE 01</h1>
+        <h1 class="name-display" style="font-size: 25px; line-height: 1.25;">
+          SOLARWISE: PLATFORM KEPUTUSAN ENERGI SURYA ATAP
+        </h1>
         <p class="bio-text">
-          A comprehensive project overview describing the hardware architecture, sensor integrations, and embedded algorithms developed for real-time telemetry and automation.
+          Platform decision-support berbasis web modern yang menghitung estimasi biaya instalasi, kelayakan teknis, proyeksi penghematan listrik, dan potensi Return on Investment (ROI) PLTS atap secara instan berdasarkan koordinat lokasi presisi dan profil konsumsi tagihan rumah tangga.
         </p>
       </section>
 
       <section class="project-detail-body">
-        <img src="./images/project1-art.png" alt="Project 1 Feature Showcase" class="project-feature-img">
+        <img src="./images/project1-solarwise.png" alt="SolarWise Web Platform Interface" class="project-feature-img">
 
         <div class="project-meta-grid">
 
           <div class="project-info-card">
-            <h3>PROJECT OVERVIEW</h3>
-            <p style="margin-bottom: 10px;">
-              <strong>Rancang Bangun Alat Deteksi Pergerakan Tanah Berkapur Menggunakan Metode Eksperimen Guna Monitoring Performasi Perangkat Mitigasi Bencana</strong>
-            </p>
+            <h3>LATAR BELAKANG &amp; TUJUAN PLATFORM</h3>
             <p>
-              Penelitian terapan pada deteksi dini pergerakan massa tanah dan mitigasi bencana alam di area berkapur. Mengintegrasikan tinjauan teoritis, observasi lapangan, pengambilan sampel tanah, serta perancangan perangkat keras dan perangkat lunak.
+              Transisi energi di Indonesia menghadapi tantangan adopsi PLTS atap residensial yang masih rendah akibat hambatan regulasi, ketidakpastian finansial, dan ketidakjelasan waktu pengembalian investasi (payback period). SolarWise hadir memberikan transparansi data berbasis lokasi agar calon pengguna dapat mengambil keputusan investasi energi bersih secara objektif dan terukur.
             </p>
           </div>
 
           <div class="project-info-card">
-            <h3>HARDWARE & SENSORS</h3>
+            <h3>ARSITEKTUR FULL-STACK &amp; API</h3>
             <ul>
-              <li><strong>Inertial Sensor:</strong> MPU6050 6-axis Gyroscope & Accelerometer</li>
-              <li><strong>Soil Sensor:</strong> Soil Moisture Capacitive Sensor</li>
-              <li><strong>Weather Sensor:</strong> Tipping Bucket Rain Gauge</li>
-              <li><strong>Microcontroller:</strong> ESP8266 & Arduino Architecture</li>
-              <li><strong>Firmware:</strong> Embedded C++ with Telemetry</li>
+              <li><strong>Frontend Engine:</strong> Next.js 15 (Turbopack), TypeScript, Tailwind CSS dengan UI/UX modern dan responsif</li>
+              <li><strong>Backend Service:</strong> Golang high-concurrency calculation engine dengan endpoint RESTful API (/v1/simulation)</li>
+              <li><strong>Geocoding Precision:</strong> Integrasi Google Maps Platform API untuk konversi alamat ke koordinat presisi</li>
+              <li><strong>Real-time Solar Data:</strong> Integrasi NASA POWER API untuk penarikan data radiasi matahari dan meteorologi</li>
             </ul>
           </div>
 
           <div class="project-info-card">
-            <h3>TESTING & CALIBRATION</h3>
+            <h3>ENVIRONMENT ANALYSIS (FASE 1)</h3>
             <p>
-              Proses validasi sistem meliputi kalibrasi multi-titik sensor, uji akurasi pergeseran bidang miring, evaluasi sensitivitas getaran, kalkulasi galat (error calculation), serta transmisi telemetri berbasis IoT secara real-time.
+              Pada alur awal simulasi, pengguna memasukkan nama lokasi/alamat dan rata-rata tagihan listrik bulanan. Sistem melakukan geocoding koordinat via Google Maps API, kemudian melakukan fetching data radiasi harian (kWh/m²/hari) ke NASA POWER API. Setelah validasi radiasi (&gt;0), sistem menghitung konsumsi dasar dan meneruskan parameter ke mesin optimasi.
             </p>
           </div>
 
           <div class="project-info-card">
-            <h3>AWARD & RECOGNITION</h3>
-            <p style="font-size: 14px; color: var(--cream); font-weight: 600;">
-              Bronze Finalist OPSI 2024
+            <h3>DEMO, REPOSITORI &amp; TAUTAN</h3>
+            <p style="font-size: 15px; color: var(--cream); font-weight: 600;">
+              Live Web Application &amp; Open Source
             </p>
             <p style="margin-top: 4px;">
-              Bidang Applied Physics & Engineering, Olimpiade Penelitian Siswa Indonesia (Kemendikbudristek RI).
+              Aplikasi telah di-deploy penuh dan dapat diakses publik melalui <strong>https://solarwise.duckdns.org/</strong>. Kode sumber terbuka tersedia pada GitHub (<strong>solarwise-fe</strong> &amp; <strong>solarwise-be</strong> oleh tim NyawITS) serta video demonstrasi fitur lengkap di YouTube.
             </p>
           </div>
 

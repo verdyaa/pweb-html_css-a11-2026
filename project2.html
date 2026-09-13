@@ -234,36 +234,55 @@
     <main class="panel-right-scroll">
 
       <section class="project-detail-hero">
-        <p class="intro-lead-left">Hello, my name is</p>
-        <div class="name-display-left" style="font-size: 22px; margin-bottom: 6px;">
+        <p class="intro-lead-left">Simulation Engine &amp; Decision Support System // Optimization Algorithm</p>
+        <div class="name-display-left" style="font-size: 20px; margin-bottom: 6px;">
           MUHAMMAD RIFQI <span class="accent-mustard">FATHURRAHMAN</span>
         </div>
-        <h1 class="name-display">PROJECT TITLE 02</h1>
+        <h1 class="name-display" style="font-size: 25px; line-height: 1.25;">
+          SOLARWISE: MESIN SIMULASI &amp; OPTIMASI KAPASITAS PLTS
+        </h1>
         <p class="bio-text">
-          Digital illustration and visual composition project exploring modern color palettes, lighting harmony, and high-precision graphic design.
+          Pengembangan mesin simulasi dan optimasi bertingkat (Phase 2: Optimization Engine) yang menguji seluruh permutasi kapasitas panel surya dari 2.0 kWp hingga 8.0 kWp terhadap batasan fisik luas atap (roof area constraints) dan batas toleransi pengembalian investasi (ROI threshold).
         </p>
       </section>
 
       <section class="project-detail-body">
-        <img src="./images/card-project2.png" alt="Project 2 Feature Showcase" class="project-feature-img" style="max-height: 520px; object-fit: cover;">
+        <img src="./images/project2-flowchart.png" alt="SolarWise Flow Aplikasi &amp; Optimization Engine Diagram" class="project-feature-img">
 
         <div class="project-meta-grid">
 
           <div class="project-info-card">
-            <h3>CREATIVE CONCEPT</h3>
+            <h3>ALGORITMA ITERASI &amp; CONSTRAINT CHECK</h3>
             <p>
-              Menggabungkan siluet karakter anime dengan pemandangan kota senja dan panggung instrumen musik (drum, bass, microphone) untuk menghadirkan nuansa melankolis dan energetik.
+              Mesin simulasi mengeksekusi looping kandidat kapasitas panel surya mulai dari 2.0 kWp hingga maksimal 8.0 kWp. Setiap skenario diuji melalui fungsi pembatas ganda: luas area instalasi harus memenuhi syarat &le; 40 m² dan estimasi waktu balik modal (ROI) harus &le; 15 tahun. Skenario yang melanggar batas dieliminasi secara otomatis guna memastikan kelayakan operasional nyata.
             </p>
           </div>
 
           <div class="project-info-card">
-            <h3>COLOR & COMPOSITION</h3>
+            <h3>MODELING FISIK &amp; DATA BASIS ILMIAH</h3>
             <ul>
-              <li><strong>Palette:</strong> Deep Indigo Navy (#0c3278) & Sky Azure</li>
-              <li><strong>Technique:</strong> Negative Space Silhouette Framing</li>
-              <li><strong>Theme:</strong> J-Rock Band Culture & Urban Twilight</li>
-              <li><strong>Tools:</strong> Vector Graphics & Digital Painting</li>
+              <li><strong>Target Wp &amp; Luas Area:</strong> Konversi kebutuhan daya ke estimasi luas fisik bidang atap rumah tinggal</li>
+              <li><strong>Energy Offset &amp; Coverage:</strong> Komputasi persentase produksi energi surya terhadap profil beban konsumsi listrik bulanan</li>
+              <li><strong>Validasi HelioScope &amp; PVsyst:</strong> Mengadopsi prinsip pemodelan performa fotovoltaik berbasis standar simulasi global</li>
+              <li><strong>Confidence Score:</strong> Evaluasi kepastian data radiasi NASA POWER dan parameter lingkungan lokal</li>
             </ul>
+          </div>
+
+          <div class="project-info-card">
+            <h3>ALUR KEPUTUSAN MULTI-SKENARIO (FASE 2 &amp; 3)</h3>
+            <p>
+              Dari skenario yang lolos verifikasi, sistem menghitung besaran penghematan tahunan (saving), rasio cakupan daya (coverage), dan proyeksi finansial. Pada Fase 3 (Decision &amp; Output), algoritma melakukan perangkingan skenario terbaik dengan prioritas ROI Tercepat dan Coverage Tertinggi, lalu menghasilkan parameter output terstruktur dalam format JSON.
+            </p>
+          </div>
+
+          <div class="project-info-card">
+            <h3>DECISION SUPPORT &amp; ERROR HANDLING</h3>
+            <p style="font-size: 15px; color: var(--cream); font-weight: 600;">
+              Sistem Pendukung Keputusan Cerdas
+            </p>
+            <p style="margin-top: 4px;">
+              Engine dilengkapi penanganan kegagalan cerdas: validasi koordinat lokasi, pengecekan data radiasi, serta deteksi kondisi tidak layak (jika seluruh skenario melanggar batasan). Hal ini mencegah pengguna melakukan investasi keliru pada properti yang tidak memenuhi syarat teknis PLTS.
+            </p>
           </div>
 
         </div>
